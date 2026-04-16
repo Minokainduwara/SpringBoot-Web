@@ -1,4 +1,4 @@
-package com.example.webdemo;
+package com.example.webdemo.controller;
 
 public class ProductController {
     public String getProducts() {

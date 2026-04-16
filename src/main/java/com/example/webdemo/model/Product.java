@@ -1,5 +1,8 @@
-package com.example.webdemo;
+package com.example.webdemo.model;
 
+import lombok.Data;
+
+@Data
 public class Product {
 
     private int proId;
