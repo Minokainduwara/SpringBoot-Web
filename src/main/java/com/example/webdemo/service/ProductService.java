@@ -15,7 +15,9 @@ public class ProductService {
 
     List<Product> products = new ArrayList<>( Arrays.asList(
             new Product(101,"Iphone",30000),
-            new Product(102,"Camera", 34400)
+            new Product(102,"Camera", 34400),
+            new Product(103,"Canon", 34400),
+            new Product(104,"SONY", 12300)
     ));
 
     public Product getProductById(int prodId) {
@@ -26,5 +28,25 @@ public class ProductService {
 
     public void addProduct(Product product) {
         products.add(product);
+    }
+
+    public void updateProduct(Product prod) {
+        int index = 0;
+        for (int i = 0; i < products.size(); i++) {
+            if (products.get(i).getProId() == prod.getProId()) {
+                index = i;
+            }
+        }
+        products.set(index, prod);
+    }
+
+    public void deleteProduct(int prodId) {
+        int index = 0;
+        for (int i = 0; i < products.size(); i++) {
+            if (products.get(i).getProId() == prodId) {
+                index = i;
+            }
+        }
+        products.remove(index);
     }
 }
