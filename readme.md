@@ -21,7 +21,7 @@ A clean, beginner-friendly REST API built with **Spring Boot**, demonstrating th
 
 | Layer | Technology |
 |---|---|
-| Language | Java 17 |
+| Language | Java 21 |
 | Framework | Spring Boot 3.x |
 | ORM | Spring Data JPA / Hibernate |
 | Database | MySQL 8 |
